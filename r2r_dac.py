@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO
+mport RPi.GPIO as GPIO
 
 class R2R_DAC:
     def __init__(self, gpio_bits, dynamic_range, verbose = False):
@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
             except ValueError:
                 print("Вы ввели не число. Попробуйте еще раз\n")
-            
+
     finally:
         if dac is not None:
             dac.deinit()
